@@ -9,6 +9,7 @@ package java8.base;
 
 import java.util.stream.*;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Common operate:
@@ -46,4 +47,33 @@ public class StreamOperate {
         return inputStream.flatMap((childList) -> childList.stream());
     }
 
+    /**
+     * filter the odd nums in the arrays
+     * */
+    public Integer[] filterOdd(Integer[] nums) {
+        return Stream.of(nums).filter(n -> n % 2 == 0).toArray(Integer[]::new);
+    }
+
+    /**
+     * peek, peek operate every element and return a new stream
+     * */
+    public List<String> peek(List<String> list) {
+        return list.stream().
+            filter(e -> e.length() > 3).
+            peek(e -> System.out.println("Filtered value : " + e)).
+            map(String::toUpperCase).
+            peek(e -> System.out.println("Mapped value : " + e)).
+            collect(Collectors.toList());
+    }
+
+    /**
+     * findFirst
+     * */
+    public void printWithNoNull(String text) {
+        Optional.ofNullable(text).ifPresent(System.out::println);
+        int length = Optional.ofNullable(text).map(String::length).orElse(-1);
+        System.out.println("The text length is " + length);
+    }
+
+    
 }

@@ -56,4 +56,26 @@ public class StreamOperateTest {
         Stream<Integer> outputStream = operate.flatMap(inputStream);
         outputStream.forEach(num -> System.out.println("The num is " + num));
     }
+
+    @Test
+    public void testFilter() {
+        Integer[] nums = {1, 2, 3, 4, 5, 6, 6, 7};
+        Integer[] odds = operate.filterOdd(nums);
+        Stream.of(odds).forEach(num -> System.out.println("The odd num is " + num));
+        
+    }
+
+    @Test
+    public void testPeek() {
+        List<String> list = Arrays.asList("one", "two", "three", "four");
+        operate.peek(list);
+    }
+
+    @Test
+    public void testFindFirst() {
+        String strA = "abc";
+        String strB = null;
+        operate.printWithNoNull(strA);
+        operate.printWithNoNull(strB);
+    }
 }
