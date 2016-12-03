@@ -5,7 +5,7 @@
 	> Created Time: Mon 28 Nov 2016 11:43:48 AM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.util.stream.Stream;
 import java.util.stream.IntStream;

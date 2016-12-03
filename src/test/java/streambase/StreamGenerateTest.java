@@ -5,11 +5,11 @@
 	> Created Time: Mon 28 Nov 2016 11:50:43 AM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
 import org.junit.Test;
 
-import java8.base.StreamGenerate;
+import java8.streambase.StreamGenerate;
 
 
 public class StreamGenerateTest {

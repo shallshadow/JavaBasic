@@ -5,7 +5,7 @@
 	> Created Time: Fri 25 Nov 2016 07:22:25 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
 import org.junit.Test;
 import org.junit.Before;
@@ -14,8 +14,8 @@ import java.util.stream.*;
 import java.util.List;
 import java.util.Arrays;
 
-import java8.base.StreamOperate;
-import java8.base.StreamTrans;
+import java8.streambase.StreamOperate;
+import java8.streambase.StreamTrans;
 
 public class StreamOperateTest {
     private static StreamOperate operate;

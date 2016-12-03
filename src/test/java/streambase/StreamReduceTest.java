@@ -5,10 +5,10 @@
 	> Created Time: Sun 27 Nov 2016 09:02:19 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
 import org.junit.Test;
-import java8.base.StreamReduce;
+import java8.streambase.StreamReduce;
 
 public class StreamReduceTest {
     private StreamReduce reduce;

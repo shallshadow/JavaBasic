@@ -5,7 +5,7 @@
 	> Created Time: Sun 27 Nov 2016 01:30:09 PM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.io.*;
 import java.util.List;
@@ -56,7 +56,7 @@ public class StreamCollectWords {
         reader = new BufferedReader(new FileReader(this.filePath));
 
         List<String> result = reader.lines().
-            flatMap(line -> Stream.of(line.split("[^a-zA-Z]"))).
+            flatMap(line -> Stream.of(line.split(REGEXP))).
             filter(word -> word.length() > 0).
             map(String::toLowerCase).
             distinct().

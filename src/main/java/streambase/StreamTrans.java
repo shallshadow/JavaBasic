@@ -5,7 +5,7 @@
 	> Created Time: Fri 25 Nov 2016 04:05:01 PM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.util.stream.*;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.Stack;
 import java.util.ArrayList;
 
 
-// Make the stream to relevant Collection.
+// Turn the stream to relevant Collection.
 public class StreamTrans {
 
     public String[] toArray(Stream stream) {

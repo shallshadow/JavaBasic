@@ -5,11 +5,11 @@
 	> Created Time: Sun 27 Nov 2016 02:55:35 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
 import org.junit.Test;
 import org.junit.BeforeClass;
-import java8.base.StreamCollectWords;
+import java8.streambase.StreamCollectWords;
 import java.util.List;
 import java.io.*;
 

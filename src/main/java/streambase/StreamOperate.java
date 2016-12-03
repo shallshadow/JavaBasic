@@ -5,7 +5,7 @@
 	> Created Time: Fri 25 Nov 2016 07:00:06 PM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.util.stream.*;
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.Optional;
  *    map(mapToInt, flatMap etc.), filter, distinct, sorted, peek, limit, skip, parallel, sequential,
  *    unordered
  *  Terminal:
- *    forEach, forEachOrdered, toArray, toArray, reduce, collect, min, max, count, anyMatch, allMatch, noneMatch,
+ *    forEach, forEachOrdered, toArray, reduce, collect, min, max, count, anyMatch, allMatch, noneMatch,
  *    findFirst, findAny, iterator
  *  Short-circuiting:
  *    anyMatch, allMatch, noneMatch, findFirst, findAny, limit

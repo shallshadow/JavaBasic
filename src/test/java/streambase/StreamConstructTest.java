@@ -5,9 +5,9 @@
 	> Created Time: Fri 25 Nov 2016 03:34:29 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
-import java8.base.StreamConstruct;
+import java8.streambase.StreamConstruct;
 import org.junit.Test;
 import org.junit.BeforeClass;
 

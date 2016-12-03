@@ -5,7 +5,7 @@
 	> Created Time: Sun 27 Nov 2016 08:51:46 PM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.util.stream.Stream;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class StreamReduce {
 
     public String concat(String[] args) {
-        return Arrays.stream(args).reduce("", String::concat);
+        return Arrays.stream(args).reduce(",", String::concat);
     }
 
     public double min(double[] values) {
@@ -33,7 +33,7 @@ public class StreamReduce {
 
     public String filterConcat(String[] args) {
         return Arrays.stream(args).
-            filter(x -> x.compareTo("Z") > 0).
-            reduce("-", String::concat);
+            filter(x -> x.compareTo("d") > 0).
+            reduce("", String::concat);
     }
 }

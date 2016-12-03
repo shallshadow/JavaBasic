@@ -5,7 +5,7 @@
 	> Created Time: Fri 25 Nov 2016 03:22:22 PM CST
  ************************************************************************/
 
-package java8.base;
+package java8.streambase;
 
 import java.util.stream.*;
 import java.util.List;

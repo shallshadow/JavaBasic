@@ -5,13 +5,13 @@
 	> Created Time: Tue 29 Nov 2016 08:06:19 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
 import java.util.Map;
 import java.util.List;
 import java.util.Arrays;
 import org.junit.Test;
-import java8.base.StreamGroup;
+import java8.streambase.StreamGroup;
 
 public class StreamGroupTest {
     private StreamGroup group = new StreamGroup();

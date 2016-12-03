@@ -5,10 +5,10 @@
 	> Created Time: Fri 25 Nov 2016 04:22:56 PM CST
  ************************************************************************/
 
-package java8.base.test;
+package java8.streambase.test;
 
-import java8.base.StreamConstruct;
-import java8.base.StreamTrans;
+import java8.streambase.StreamConstruct;
+import java8.streambase.StreamTrans;
 
 import java.util.stream.Stream;
 import java.util.List;
